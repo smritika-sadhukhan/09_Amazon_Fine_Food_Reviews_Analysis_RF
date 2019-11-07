@@ -42,13 +42,21 @@ Given a review, determine whether the review is positive (rating of 4 or 5) or n
 COMPARISION OF THE MODELS WITH DEPTH AND ESTIMATER AS THE HYPERPARAMETER
 +------------+---------------------+-----------+-----------+-------+
 | Vectorizer |        model        | max_depth | estimator |  AUC  |
+
 +------------+---------------------+-----------+-----------+-------+
 |    BOW     |     RandomForest    |    100    |    100    | 90.27 |
+
 |   TF-IDF   |     RandomForest    |     50    |    100    | 88.79 |
+
 |  AVG-W2V   |     RandomForest    |     50    |    100    | 87.82 |
+
 | TF-IDF-W2V |     RandomForest    |    100    |     60    | 84.88 |
+
 |    BOW     |  GBDT using XGBOOST |    100    |    100    |   93  |
+
 |   TF-IDF   |  GBDT using XGBOOST |     5     |    100    |   90  |
+
 |  AVG-W2V   |  GBDT using XGBOOST |     50    |    100    |  90.8 |
+
 | TF-IDF-W2V |  GBDT using XGBOOST |     50    |    100    | 88.68 |
 +------------+---------------------+-----------+-----------+-------+
